@@ -1,0 +1,7 @@
+{
+  "name": "hortusViridis",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
