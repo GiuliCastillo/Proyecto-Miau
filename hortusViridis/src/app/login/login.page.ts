@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { SessionManager } from 'src/managers/SessionManager';
 
 @Component({
   selector: 'app-login',
@@ -7,9 +9,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router, private sessionManager:SessionManager) { }
+
+    user: string = '';
+    password: string = '';
 
   ngOnInit() {
   }
 
+  onLoginButtonPressed(){
+    if (this.sessionManager.performLogin(this.user, this.password)) {
+      this.router.navigate(['/home'])
+    } else {
+      this.user=''
+      this.password=''
+      alert('Las credenciales no son válidas.')
+    }
+  }
+
+  onRegisterButtonPressed(){
+    this.router.navigate(['/register'])
+  }
 }
