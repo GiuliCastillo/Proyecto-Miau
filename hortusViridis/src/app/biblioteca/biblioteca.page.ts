@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-biblioteca',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BibliotecaPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
+
+  onConfigButtonPressed(){
+    this.router.navigate(['/configuracion'])
+  }
+
+  onHomeButtonPressed(){
+    this.router.navigate(['/home'])
+  }
 }

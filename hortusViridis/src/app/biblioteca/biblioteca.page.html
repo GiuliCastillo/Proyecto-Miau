@@ -17,4 +17,22 @@
       <ion-title size="large">Biblioteca</ion-title>
     </ion-toolbar>
   </ion-header>
+
+
+  <!--Tabs-->
+  <div class="tabs-container">
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="info">
+          <ion-icon name="book-outline"></ion-icon>
+        </ion-tab-button>
+        <ion-tab-button tab="home" (click)="onHomeButtonPressed()">
+          <ion-icon name="leaf-outline"></ion-icon>
+        </ion-tab-button>
+        <ion-tab-button tab="config" (click)="onConfigButtonPressed()">
+          <ion-icon name="settings-outline"></ion-icon>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </div>
 </ion-content>
