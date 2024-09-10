@@ -6,7 +6,7 @@
     </ion-buttons>
 
     <ion-title>
-      :3
+      Inicio
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -64,13 +64,13 @@
   <div class="tabs-container">
     <ion-tabs>
       <ion-tab-bar slot="bottom">
-        <ion-tab-button tab="info">
+        <ion-tab-button tab="info" (click)="onInfoButtonPressed()">
           <ion-icon name="book-outline"></ion-icon>
         </ion-tab-button>
         <ion-tab-button tab="home">
           <ion-icon name="leaf-outline"></ion-icon>
         </ion-tab-button>
-        <ion-tab-button tab="config">
+        <ion-tab-button tab="config" (click)="onConfigButtonPressed()">
           <ion-icon name="settings-outline"></ion-icon>
         </ion-tab-button>
       </ion-tab-bar>
