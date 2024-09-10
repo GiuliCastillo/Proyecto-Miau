@@ -29,3 +29,9 @@
 ion-item {
   --padding-start: 0;
 }
+
+.Card{
+  display: flex; /* Activa flexbox en el contenedor */
+  justify-content: center; /* Centra la imagen horizontalmente */
+  text-align: center;
+}
