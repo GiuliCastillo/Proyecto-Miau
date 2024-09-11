@@ -1,10 +1,9 @@
-.image-container {
-    display: flex; /* Activa flexbox en el contenedor */
-    justify-content: center; /* Centra la imagen horizontalmente */
-    align-items: center; /* Centra la imagen verticalmente */
-    height: 100vh; /* Ocupa toda la altura de la ventana */
-    background-color: #EBF4E4; /* Color de fondo opcional */
-}
+img {
+        display: block;
+        margin: 0 auto;
+        height: 40%;
+      }
+
 ion-content {
     --background: #EBF4E4;
   }
@@ -12,5 +11,7 @@ ion-content {
 *{background-color:#EBF4E4 ;}
 
 h1{font-style:italic;
-    color: #3e382d;}
+    color: #3e382d;
+    text-align: center;
+    margin-top: 5%;}
 /*EBF4E4*/
