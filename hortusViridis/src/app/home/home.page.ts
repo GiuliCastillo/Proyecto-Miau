@@ -8,14 +8,9 @@ import { Router } from '@angular/router';
 })
 export class HomePage {
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) {
 
-
-  onInfoButtonPressed(){
-    this.router.navigate(['/biblioteca'])
   }
 
-  onConfigButtonPressed(){
-    this.router.navigate(['/configuracion'])
-  }
+  
 }

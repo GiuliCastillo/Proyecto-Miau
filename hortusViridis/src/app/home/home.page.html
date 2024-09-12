@@ -12,23 +12,17 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <!--FIN DE HEADER -->
 
-  
-<div class="Card">
-  <ion-card>
-    <img alt="Clima" src="assets/Imagenes/clima2.png" />
-    <ion-card-header>
-      <ion-card-title>Hoy 16°</ion-card-title>
-      <ion-card-subtitle>Olmué</ion-card-subtitle>
-    </ion-card-header>
-  </ion-card>
-</div>
+<!--Futura api del clima-->
+  <div class="Card">
+    <ion-card>
+      <img alt="Clima" src="assets/Imagenes/clima2.png" />
+      <ion-card-header>
+        <ion-card-title>Hoy 16°</ion-card-title>
+        <ion-card-subtitle>Olmué</ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+  </div>
   <!--CARDS DE VERDURAS-->
   <div class="cards-container">
     <ion-card>
@@ -72,18 +66,21 @@
 
   <!--Tabs-->
   <div class="tabs-container">
-    <ion-tabs>
-      <ion-tab-bar slot="bottom">
-        <ion-tab-button tab="info" (click)="onInfoButtonPressed()">
-          <ion-icon name="book-outline"></ion-icon>
-        </ion-tab-button>
-        <ion-tab-button tab="home">
-          <ion-icon name="leaf-outline"></ion-icon>
-        </ion-tab-button>
-        <ion-tab-button tab="config" (click)="onConfigButtonPressed()">
-          <ion-icon name="settings-outline"></ion-icon>
-        </ion-tab-button>
-      </ion-tab-bar>
-    </ion-tabs>
+    <ion-router-outlet></ion-router-outlet>
+      <ion-tabs>
+        <ion-tab-bar slot="bottom">
+          <ion-tab-button tab="info" routerLink="/biblioteca">
+            <ion-icon name="book-outline"></ion-icon>
+          </ion-tab-button>
+          <ion-tab-button tab="home" routerLink="/home">
+            <ion-icon name="leaf-outline"></ion-icon>
+          </ion-tab-button>
+          <ion-tab-button tab="config" routerLink="/configuracion">
+            <ion-icon name="settings-outline"></ion-icon>
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs>
   </div>
+
+
 </ion-content>

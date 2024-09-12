@@ -13,12 +13,4 @@ export class ConfiguracionPage implements OnInit {
   ngOnInit() {
   }
 
-
-  onInfoButtonPressed(){
-    this.router.navigate(['/biblioteca'])
-  }
-
-  onHomeButtonPressed(){
-    this.router.navigate(['/home'])
-  }
 }

@@ -13,12 +13,4 @@ export class BibliotecaPage implements OnInit {
   ngOnInit() {
   }
 
-
-  onConfigButtonPressed(){
-    this.router.navigate(['/configuracion'])
-  }
-
-  onHomeButtonPressed(){
-    this.router.navigate(['/home'])
-  }
 }

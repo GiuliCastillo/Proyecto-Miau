@@ -14,6 +14,14 @@ ion-content {
     height: 100%; /* Asegura que el contenedor ocupe todo el espacio disponible */
 }
 
+.content-container h1 {
+    font-weight: bold;
+    padding-bottom: 5%;
+    color: black;
+}
+
+
+
 .button {
     --background: #62CD69;} 
 
