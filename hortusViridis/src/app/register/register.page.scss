@@ -7,11 +7,11 @@ ion-content {
 .content-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* Asegura que los botones estén en la parte inferior */
+    justify-content: flex-end;
     width: 100%;
-    padding: 32px; /* Espacio a los lados */
-    gap: 16px; /* Espacio entre input-container y button-container */
-    height: 100%; /* Asegura que el contenedor ocupe todo el espacio disponible */
+    padding: 32px;
+    gap: 16px;
+    height: 100%; 
 }
 
 .content-container h1 {
@@ -20,9 +20,30 @@ ion-content {
     color: black;
 }
 
+.container-input {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+    color: #333333;
+    padding: 5px 10px 5px 10px;
+    gap: 8px;
+    font-family: sans-serif;
+}
+
+ion-input{
+    --border-radius: 15px !important;
+    --background: white;
+    --box-shadow: none;
+    padding: 10px;
+}
+
 .button {
-    --background: #62CD69;} 
+    --background: #62CD69;
+    --border-radius: 10px !important;
+
+} 
 
 ion-content {
-        --background: #EBF4E4; /* Define el color de fondo usando una variable de Ionic */
+        --background: #EBF4E4;
       }

@@ -3,13 +3,11 @@
   <div class="content-container">
     <h1>Inicio de Sesión</h1>
   
-    <div class="input-container">
-      <ion-item>
-        <ion-input placeholder="Usuario" type="text" [(ngModel)]="user"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-input placeholder="Contraseña" type="password" [(ngModel)]="password"></ion-input>
-      </ion-item>
+    <div class="container-input" >
+      <ion-input label="Nombre de usuario" labelPlacement="floating" fill="outline" type="text" [(ngModel)]="user" required></ion-input>
+    </div>
+    <div class="container-input">
+      <ion-input label="Contraseña" labelPlacement="floating" type="password" fill="outline" [(ngModel)]="password" required></ion-input>
     </div>
 
     <div class="button-container">
