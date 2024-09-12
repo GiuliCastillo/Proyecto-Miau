@@ -14,7 +14,7 @@ export class RegisterPage implements OnInit {
   }
 
   onRegisterButtonPressed(){
-    this.router.navigate(['/home'])
+    this.router.navigate(['/tabs/home'])
   }
 
   onLoginButtonPressed(){
