@@ -35,3 +35,13 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+
+/*Barrita ñau*/
+ion-toolbar{--background: #b1d17d;
+            border-color: #b1d17d;
+
+  }
+
+  ion-card{
+    --background:white;
+  }
