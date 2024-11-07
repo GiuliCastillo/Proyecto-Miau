@@ -19,7 +19,7 @@ export class LoginPage implements OnInit {
 
   onLoginButtonPressed(){
     if (this.sessionManager.performLogin(this.user, this.password)) {
-      this.router.navigate(['/tabs/home'])
+      this.router.navigate(['/tabs/home'], { queryParams: { user: this.user } });
     } else {
       this.user=''
       this.password=''
